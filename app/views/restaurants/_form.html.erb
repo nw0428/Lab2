@@ -29,7 +29,12 @@
     <%= f.label :phone_number %><br>
     <%= f.text_field :phone_number %>
   </p>
- 
+
+  <p>
+    <%= f.label :remote_image_url, "or image URL" %><br />
+    <%= f.file_field :remote_image_url %>
+  </p>
+
   <p>
     <%= f.submit %>
   </p>

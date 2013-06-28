@@ -18,5 +18,11 @@
   <%= @rest.phone_number %>
 </p>
 
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @rest.image_url(:thumb) if @rest.image? %>
+</p>
+
+
 <%= link_to "back", restaurants_path %>
 | <%= link_to 'Edit', edit_restaurant_path(@rest) %>

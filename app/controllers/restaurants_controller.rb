@@ -22,7 +22,7 @@ class RestaurantsController < ApplicationController
 	end
 
 	def create
-		@rest = Restaurant.new(params[:restaurants])
+		@rest = Restaurant.new(params[:restaurant])
 
 		if @rest.save
 			redirect_to @rest
