@@ -1,0 +1,36 @@
+<%= form_for @rest do |f| %>
+  <% if @rest.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@rest.errors.count, "error") %> prohibited
+      this rest from being saved:</h2>
+    <ul>
+    <% @rest.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+ <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

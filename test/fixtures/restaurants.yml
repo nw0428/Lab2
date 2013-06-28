@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyText
+  phone_number: MyString
+
+two:
+  name: MyString
+  description: MyText
+  address: MyText
+  phone_number: MyString
+
+<% 1000.times do |n| %>
+restaurant_<%= n %>:
+  name: <%= "user#{n}" %>
+  description: <%= "This is restaurant#{n}" %>
+  address: <%= "{n}{n} Restaurant ave" %>
+  phone_number : <%= {n} %>
+<% end %>
