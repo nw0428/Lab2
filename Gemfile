@@ -17,6 +17,7 @@ group :production do
 	gem 'pg'
 end
 
+gem 'mini_magick'
 gem "rmagick"
 gem "carrierwave"
 

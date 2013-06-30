@@ -16,6 +16,7 @@
       <td><%= rest.description %></td>
       <td><%= rest.address %></td>
       <td><%= rest.phone_number %></td>
+      <td><%= image_tag rest.image_url(:thumb) if rest.image? %><td>
       <td><%= link_to 'Show', restaurant_path(rest) %></td>
       <td><%= link_to 'Edit', edit_restaurant_path(rest) %></td>
       <td><%= link_to 'Destroy', restaurant_path(rest), method: :delete, data: { confirm: 'Are you sure?' } %><td>

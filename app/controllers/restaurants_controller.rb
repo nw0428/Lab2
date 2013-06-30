@@ -19,7 +19,9 @@ class RestaurantsController < ApplicationController
 
 	def show
 		@rest = Restaurant.find(params[:id])
+		@image = ImageUploader.new
 	end
+
 
 	def create
 		@rest = Restaurant.new(params[:restaurant])
